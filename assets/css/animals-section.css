@@ -1,0 +1,146 @@
+.animals-section {
+    overflow: hidden;
+}
+
+.animals-section__content-cards {
+    margin: 20px 0;
+}
+
+.animals-section__content-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animals-section__content-heading .introduce {
+    max-width: 45ch;
+}
+
+.animals-section__content-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.animals-section__content-btn .animals-btn {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: var(--text-color);
+}
+
+.animals-section__content-btn .animals-btn.active,
+.animals-section__content-btn .animals-btn:hover {
+    background-color: var(--green-general);
+    color: var(--white-general);
+}
+
+.animals-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.animal-card {
+    position: relative;
+    margin-bottom: 48px;
+    text-align: center;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.animal-card:hover {
+    transform: scale(1.1);
+    z-index: 99;
+}
+
+.animal-card img {
+    border-radius: 10px;
+    height: 100%;
+    width: -webkit-fill-available;
+    object-fit: cover;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.animal-card .animal-card__body {
+    margin: 24px 0;
+}
+
+.animal-card__body .animal-name {
+    font-size: 2.5rem;
+}
+
+.animal-card__body .animal-name:hover {
+    color: var(--green-general);
+    cursor: pointer;
+}
+
+.animal-modal{
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: var(--background-color-shadow);
+    display: none;
+}
+
+.animal-modal__img{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px; 
+    margin: auto;
+}
+
+.animal-modal__arrow{
+    background-color: var(--green-general);
+    color: var(--white-general);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.6rem;
+}
+
+.animal-modal__close,
+.arrow-left,
+.arrow-right{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    opacity: 0.5;
+}
+
+.animal-modal__close:hover,
+.arrow-left:hover,
+.arrow-right:hover{
+    opacity: 1;
+}
+
+.arrow-right{
+    right: 50px;
+    top: 50%;
+}
+
+.arrow-left{
+    left: 50px;
+    top: 50%;
+}
+
+.animal-modal__close{
+    background-color: transparent;
+    color: var(--white-general);
+    top: -45px;
+    right: 0;
+    border: none;
+    font-size: 3rem;
+}

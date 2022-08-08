@@ -1,0 +1,196 @@
+/* Big Screen */
+@media (min-width: 1920px) {
+    .interactions-section::before {
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/fact-img-1.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+
+    .interactions-section::after {
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/fact-img-2.png);
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        z-index: 1;
+    }
+
+    .membership-section::before{
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/membership-img-1.png);
+        position: absolute;
+        top: -64px;
+        z-index: 1;
+    }
+
+    .membership-section::after{
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/membership-img-2.png);
+        position: absolute;
+        z-index: 1;
+        bottom: -68px;
+        right: 0;
+    }
+
+    .feedback-section::before{
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/feedback-img-1.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .feedback-section::after{
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/feedback-img-2.png);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .event-section::before{
+        content: url(https://template.viserlab.com/viserlife/demo/assets/images/bear.png);
+        position: absolute;
+        right: 0;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    .padding-64 {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .subscribe-section {
+        margin-bottom: -90px;
+    }
+
+    .footer-section {
+        padding-top: 130px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+    .sub-img {
+        display: none;
+    }
+
+    .nav-mobile__list {
+        width: 350px;
+    }
+
+    .nav-mobile__list .nav-mobile__list-item {
+        font-size: 2rem;
+    }
+
+    .nav-mobile__list .nav-mobile__list-item button {
+        padding: 0.6rem 10.8rem;
+    }
+
+    .subscribe-section::after {
+        display: none;
+    }
+}
+
+/* Small Tablet */
+@media(max-width: 912px) {
+    #logo {
+        width: 80%;
+    }
+
+    .nav__list,
+    .sign-up {
+        display: none;
+    }
+
+    .navbar-mobile {
+        margin-left: auto;
+    }
+
+    .sub-img {
+        display: none;
+    }
+
+    .welcome-section__card {
+        display: block !important;
+    }
+
+    .info-section__list-underline {
+        width: 100%;
+    }
+
+    .about-us-section__content-heading,
+    .about-us-section__content-body {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subscribe-section {
+        clip-path: none;
+    }
+
+    .subscribe-section::after {
+        display: none;
+    }
+
+    .subscribe-section__content {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media(max-width: 782px) {
+    .carousel {
+        margin-top: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-caption {
+        z-index: 0;
+    }
+
+    /* Welcome section */
+    .welcome-section {
+        padding: 12px;
+    }
+
+    .welcome-section .main-title {
+        font-size: 3rem;
+    }
+
+    /* Info section */
+    .padding-sm-24 {
+        padding: 0 24px;
+    }
+
+    .info-section__list.info-section__list-underline {
+        width: 100%;
+    }
+
+    .event-card,
+    .member-cards .member-card {
+        display: block;
+    }
+
+    .event-card img,
+    .member-card img {
+        width: -webkit-fill-available;
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+
+    .subscribe-section::after {
+        display: none;
+    }
+
+    .search-modal__form {
+        min-width: 90%;
+    }
+}

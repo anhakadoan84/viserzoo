@@ -1,0 +1,21 @@
+#footer{
+    position: relative;
+    background-image: url(https://template.viserlab.com/viserlife/demo/assets/images/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-section{
+    padding-bottom: 1px;
+    background-color: var(--background-color-shadow);
+}
+
+.footer__copyright{
+    padding: 2rem 0;
+    background-color: #080912;
+}
+
+.copyright{
+    font-size: 1.3rem;
+}

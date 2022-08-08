@@ -1,0 +1,86 @@
+.membership-section{
+    position: relative;
+}
+
+.membership-section__content-heading .introduce{
+    max-width: 45ch;
+}
+
+.membership-section__content-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-cards .member-card{
+    display: flex;
+    gap: 2rem;
+    margin: 20px 0;
+}
+
+.member-card img{
+    border-radius: 5px;
+}
+
+.member-card__body,
+.member-card__price,
+.member-card__name,
+.member-card__introduce,
+.member-card__offer-list,
+.member-card__offer-list-item,
+.member-card__join-btn{
+    margin: 16px 0;
+}
+
+.member-card__price{
+    font-size: 2.5rem;
+}
+
+.member-card__name{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.member-card__introduce{
+    font-size: 1.4rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.member-card__offer-list{
+    font-size: 1.5rem;
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+.member-card__offer-list-item{
+    color: var(--text-color);
+}
+
+.member-card__offer-list-item::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-general);
+    box-shadow: 0 0 0 3px var(--green-rgba);
+}
+
+.member-card__join-btn{
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+}
+
+.member-card__join-btn:hover{
+    background-color: var(--green-general);
+    color: var(--white-general);
+    border: none;
+    transition: ease-in 0.2s;
+}

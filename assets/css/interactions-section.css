@@ -1,0 +1,40 @@
+.interactions-section{
+    background-image: url(../img/interactions-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    isolation: isolate;
+    position: relative;
+}
+
+.interactions-section__content{
+    background-color: var(--background-color-shadow);
+    display: flex;
+}
+
+.interactions-section__odometer{
+    font-size: 6rem;
+    margin: 48px 0;
+    text-align: center;
+}
+
+.interactions-card__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interactions-card__body:first-child{
+    display: none;
+}
+
+.odometer-number{
+    color: var(--green-general);
+}
+
+.odometer-text{
+    font-size: 2rem;
+    color: var(--white-general);
+    font-weight: 500;
+}

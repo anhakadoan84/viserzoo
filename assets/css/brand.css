@@ -1,0 +1,12 @@
+.brand-card{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    aspect-ratio: 1/0.6;
+}
+
+.brand-card img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
